@@ -1,0 +1,23 @@
+@authToken = 
+@baseUrl = http://localhost:3003
+@basePath = api/blogs
+@id = 
+
+GET {{baseUrl}}/{{basePath}}
+
+###
+
+POST {{baseUrl}}/{{basePath}}
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "author": "Kekalainen",
+    "title": "Structure of backend application, introduction to testing",
+    "url": "https://fullstackopen.com/en/part4/structure_of_backend_application_introduction_to_testing"
+}
+
+###
+
+DELETE {{baseUrl}}/{{basePath}}/{{id}}
+Authorization: Bearer {{authToken}}

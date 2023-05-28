@@ -1,0 +1,21 @@
+@basePath = api/persons
+
+GET {{baseUrl}}/{{basePath}}
+
+###
+
+POST {{baseUrl}}/{{basePath}}
+Content-Type: application/json
+
+{
+    "name": "Kekalainen",
+    "number": "040-400404"
+}
+
+###
+
+GET {{baseUrl}}/{{basePath}}/1
+
+###
+
+DELETE {{baseUrl}}/{{basePath}}/1

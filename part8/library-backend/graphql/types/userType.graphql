@@ -1,0 +1,13 @@
+type User {
+  username: String!
+  favouriteGenre: String!
+  id: ID!
+}
+
+type Mutation {
+  createUser(username: String!, favouriteGenre: String!): User
+}
+
+type Query {
+  me: User
+}
